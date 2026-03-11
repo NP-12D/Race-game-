@@ -118,8 +118,8 @@ document.querySelector(".start").addEventListener("click", () => {
 
   if (balance < selectedBet) {
     resultMessage.textContent =
-      "Please select a bet amount and choose a character";
-    modal.style.display = "block";
+      "Insufficient balance! Please select a lower bet amount.";
+      modal.style.display = "block";
     setTimeout(() => {
       modal.style.display = "none";
     }, 2000);
@@ -233,7 +233,7 @@ document.querySelectorAll(".choose img").forEach((img, index) => {
       .querySelectorAll(".choose img")
       .forEach((i) => (i.style.border = ""));
 
-    img.style.border = "3px solid #5E0006";
+    img.style.border = "2px solid white";
 
     const characters = ["jerry", "grey", "mouse"];
     selectedCharacter = characters[index];

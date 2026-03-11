@@ -196,7 +196,7 @@ cursor: pointer;
   border: 2px solid #fff2e1;
   background-color: #a79277;
   color: #fff2e1;
-  width: 70px;
+  flex: 1;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
